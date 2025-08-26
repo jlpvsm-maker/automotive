@@ -2,168 +2,83 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>RPM Automotive</title>
-
-  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
-
-  <!-- Tailwind Custom Config -->
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            orbitron: ['Orbitron', 'sans-serif'],
-          },
-          colors: {
-            neonPink: '#FF4EC0',
-            neonBlue: '#00BFFF',
-            deepPurple: '#6A0DAD',
-            shopGray: '#2F2F2F',
-          },
-        },
-      },
-    };
-  </script>
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
   <style>
-    html { scroll-behavior: smooth; }
-    @keyframes fadeIn {
-      0% { opacity: 0; transform: translateY(20px); }
-      100% { opacity: 1; transform: translateY(0); }
+    body {
+      font-family: 'Russo One', sans-serif;
     }
-    .animate-fade-in { animation: fadeIn 1.2s ease-out forwards; }
   </style>
 </head>
-<body class="bg-gray-100 text-gray-800 font-orbitron">
-
+<body class="bg-gray-900 text-white">
   <!-- Header -->
-  <header class="bg-black text-white p-4 flex justify-between items-center sticky top-0 z-50">
-    <div class="flex items-center">
-      <img src="logo.png" alt="RPM Logo" class="h-10 w-auto mr-2" />
-      <h1 class="text-2xl font-bold text-neonPink">RPM Automotive</h1>
-    </div>
-    <nav>
-      <a href="#services" class="mx-2 hover:text-neonPink">Services</a>
-      <a href="#about" class="mx-2 hover:text-neonPink">About</a>
-      <a href="#contact" class="mx-2 hover:text-neonPink">Contact</a>
-    </nav>
+  <header class="bg-black text-white p-6 text-center shadow-md">
+    <h1 class="text-4xl sm:text-5xl font-bold tracking-wide">RPM Automotive</h1>
+    <p class="mt-2 text-xl sm:text-2xl text-gray-400">Fast. Honest. Reliable.</p>
   </header>
 
-  <!-- Hero Section -->
-  <section class="relative h-[500px] flex items-center justify-center bg-shopGray text-white text-center overflow-hidden">
-    <img src="images/hero-shop.jpg" alt="Mechanic working on car engine"
-         class="absolute inset-0 w-full h-full object-cover brightness-50 scale-100 hover:scale-105 transition-transform duration-500" />
-    <div class="relative z-10 px-4 animate-fade-in">
-      <h2 class="text-5xl font-bold mb-4 text-neonPink drop-shadow-lg">Reliable Performance & Maintenance</h2>
-      <p class="max-w-2xl mx-auto text-2xl drop-shadow-md mb-6">
-        Family-owned and fully licensed automotive service with over 20 years of experience. Your trusted local garage in Chatham.
-      </p>
-      <a href="#contact" class="inline-block bg-neonPink hover:bg-neonBlue text-white font-semibold py-3 px-6 rounded-full shadow-lg transition-transform duration-300 transform hover:scale-105">
-        Book Now
-      </a>
-    </div>
-  </section>
-
-  <!-- Services -->
-  <section id="services" class="py-10 px-6 max-w-4xl mx-auto">
-    <h3 class="text-3xl font-semibold mb-6 text-center text-deepPurple">Our Services</h3>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <div class="space-y-2 text-center">
-        <p class="text-xl font-semibold mb-2">Oil Changes</p>
-        <img src="images/oil-change.jpg" alt="Oil Change" class="w-full rounded-lg shadow-lg mx-auto hover:scale-105 transition" />
-      </div>
-      <div class="space-y-2 text-center">
-        <p class="text-xl font-semibold mb-2">Brake Repair</p>
-        <img src="images/brake-repair.jpg" alt="Brake Repair" class="w-full rounded-lg shadow-lg mx-auto hover:scale-105 transition" />
-      </div>
-      <div class="space-y-2 text-center">
-        <p class="text-xl font-semibold mb-2">Tire Services</p>
-        <img src="images/tire-services.jpg" alt="Tire Services" class="w-full rounded-lg shadow-lg mx-auto hover:scale-105 transition" />
-      </div>
-      <div class="space-y-2 text-center">
-        <p class="text-xl font-semibold mb-2">General Auto Repairs</p>
-        <img src="images/general-repairs.jpg" alt="General Auto Repairs" class="w-full rounded-lg shadow-lg mx-auto hover:scale-105 transition" />
-      </div>
-    </div>
+  <!-- Hero -->
+  <section class="bg-gradient-to-r from-blue-900 via-gray-900 to-purple-900 py-20 text-center">
+    <h2 class="text-3xl sm:text-4xl mb-4">Your Local Garage You Can Trust</h2>
+    <p class="text-lg sm:text-xl max-w-xl mx-auto">We provide expert automotive services including oil changes, tire rotation, diagnostics and more — all with transparent pricing and top-quality service.</p>
   </section>
 
   <!-- About -->
-  <section id="about" class="bg-shopGray text-white py-10 px-6 max-w-4xl mx-auto">
-    <h3 class="text-3xl font-semibold mb-6 text-center text-neonBlue">About Us</h3>
-    <p class="text-lg max-w-xl mx-auto">
-      RPM Automotive is a family-run business with a passion for quality service and honest repairs. We pride ourselves on personalized customer care.
+  <section class="py-16 px-6 sm:px-12 md:px-32">
+    <h3 class="text-2xl sm:text-3xl mb-4 text-pink-400">About Us</h3>
+    <p class="text-base sm:text-lg text-gray-300">
+      At RPM Automotive, we’re passionate about cars and the people who drive them. Our team is dedicated to providing you with honest service, fair prices, and fast turnaround. Whether it’s routine maintenance or unexpected repairs — we’ve got your back.
     </p>
   </section>
 
-  <!-- Contact / Booking -->
-  <section id="contact" class="bg-deepPurple text-white py-10 px-6 max-w-4xl mx-auto">
-    <h3 class="text-3xl font-semibold mb-6 text-center text-neonPink">Book an Appointment</h3>
-    <form action="https://formsubmit.co/rpmautomotive66@gmail.com" method="POST" class="max-w-md mx-auto space-y-4">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_next" value="https://your-website.com/thank-you.html">
-
-      <label class="block">
-        <span class="text-white">Name</span>
-        <input type="text" name="name" required class="mt-1 block w-full rounded bg-white text-black px-3 py-2" />
-      </label>
-
-      <label class="block">
-        <span class="text-white">Phone Number</span>
-        <input type="tel" name="phone" required class="mt-1 block w-full rounded bg-white text-black px-3 py-2" />
-      </label>
-
-      <label class="block">
-        <span class="text-white">Vehicle Make</span>
-        <select name="make" class="mt-1 block w-full rounded bg-white text-black px-3 py-2" required>
-          <option value="">Select Make</option>
-          <option>Chevrolet</option>
-          <option>Ford</option>
-          <option>Honda</option>
-          <option>Toyota</option>
-          <option>Other</option>
-        </select>
-      </label>
-
-      <label class="block">
-        <span class="text-white">Vehicle Model</span>
-        <input type="text" name="model" required class="mt-1 block w-full rounded bg-white text-black px-3 py-2" />
-      </label>
-
-      <label class="block">
-        <span class="text-white">Vehicle Year</span>
-        <input type="number" name="year" min="1980" max="2025" required class="mt-1 block w-full rounded bg-white text-black px-3 py-2" />
-      </label>
-
-      <label class="block">
-        <span class="text-white">Preferred Date & Time</span>
-        <input type="datetime-local" name="datetime" required class="mt-1 block w-full rounded bg-white text-black px-3 py-2" />
-      </label>
-
-      <button type="submit" class="bg-neonPink text-white py-2 px-4 rounded hover:bg-neonBlue transition">
-        Submit Request
-      </button>
-    </form>
+  <!-- Services -->
+  <section class="bg-gray-800 py-16 px-6 sm:px-12 md:px-32">
+    <h3 class="text-2xl sm:text-3xl mb-6 text-blue-400">Services We Offer</h3>
+    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-lg">
+      <li>🔧 Oil Changes</li>
+      <li>🙞 Tire Rotations</li>
+      <li>🔍 Engine Diagnostics</li>
+      <li>🧰 Brake Service</li>
+      <li>🚗 General Tune-Ups</li>
+      <li>❄️ A/C Recharge</li>
+      <li>👠 Suspension & Steering</li>
+      <li>⚙️ Transmission Flush</li>
+    </ul>
   </section>
 
-  <!-- Map -->
-  <section class="bg-shopGray text-white py-10 px-6 max-w-4xl mx-auto">
-    <h3 class="text-3xl font-semibold mb-6 text-center text-neonBlue">Find Us</h3>
-    <div class="w-full h-64 border-4 border-deepPurple rounded-lg overflow-hidden shadow-lg">
-      <iframe class="w-full h-full"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2921.801801218523!2d-82.18319492434486!3d42.405792234757556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882f1e030ffdcba3%3A0x89a7fc92b267b5f1!2s679%20Bloomfield%20Rd%2C%20Chatham-Kent%2C%20ON%20N7M%205J5%2C%20Canada!5e0!3m2!1sen!2sca!4v1722619220000" allowfullscreen="" loading="lazy"></iframe>
-    </div>
-    <p class="text-center mt-4 text-lg">📍 679 Bloomfield Rd, Chatham-Kent, ON N7M 5J5, Canada</p>
+  <!-- Contact -->
+  <section class="py-16 px-6 sm:px-12 md:px-32 bg-gradient-to-b from-purple-900 to-black">
+    <h3 class="text-2xl sm:text-3xl mb-4 text-green-400">Contact Us</h3>
+    <p class="text-lg mb-2">
+      📍 Location:
+      <a 
+        href="https://www.google.com/maps/search/?api=1&query=672+Bloomfield+Rd,+Chatham,+Ontario" 
+        target="_blank" 
+        class="text-blue-400 hover:underline">
+        672 Bloomfield Rd, Chatham, ON
+      </a>
+    </p>
+    <p class="text-lg mb-2">
+      📅 Hours: Monday to Friday, 9 AM - 5 PM<br />
+      <span class="text-sm text-gray-400">Late night and last-minute appointments available upon request.</span>
+    </p>
+    <p class="text-lg mb-6">
+      📞 Phone: 
+      <a href="tel:+15193551324" class="text-blue-400 hover:underline">
+        (519) 355-1324
+      </a>
+    </p>
+    <a href="tel:+15193551324" class="inline-block bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-6 rounded-xl shadow-lg transition">
+      Call to Book an Appointment
+    </a>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-black text-white py-4 text-center">
-    <p>&copy; 2025 RPM Automotive. All rights reserved.</p>
+  <footer class="bg-black text-center py-6 text-gray-500">
+    &copy; 2025 RPM Automotive. All rights reserved.
   </footer>
-
 </body>
 </html>
