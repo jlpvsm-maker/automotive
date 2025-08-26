@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="RPM Automotive – Fast, honest, and reliable automotive services in Chatham, Ontario. Oil changes, tire rotations, diagnostics, and more.">
+  <meta name="author" content="RPM Automotive">
   <title>RPM Automotive</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,6 +16,7 @@
   </style>
 </head>
 <body class="bg-gray-900 text-white">
+
   <!-- Header -->
   <header class="bg-black text-white p-6 text-center shadow-md">
     <h1 class="text-4xl sm:text-5xl font-bold tracking-wide">RPM Automotive</h1>
@@ -23,7 +26,9 @@
   <!-- Hero -->
   <section class="bg-gradient-to-r from-blue-900 via-gray-900 to-purple-900 py-20 text-center">
     <h2 class="text-3xl sm:text-4xl mb-4">Your Local Garage You Can Trust</h2>
-    <p class="text-lg sm:text-xl max-w-xl mx-auto">We provide expert automotive services including oil changes, tire rotation, diagnostics and more — all with transparent pricing and top-quality service.</p>
+    <p class="text-lg sm:text-xl max-w-xl mx-auto leading-relaxed">
+      We provide expert automotive services including oil changes, tire rotation, diagnostics and more — all with transparent pricing and top-quality service.
+    </p>
   </section>
 
   <!-- About -->
@@ -39,7 +44,7 @@
     <h3 class="text-2xl sm:text-3xl mb-6 text-blue-400">Services We Offer</h3>
     <ul class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-lg">
       <li>🔧 Oil Changes</li>
-      <li>🙞 Tire Rotations</li>
+      <li>🔄 Tire Rotations</li>
       <li>🔍 Engine Diagnostics</li>
       <li>🧰 Brake Service</li>
       <li>🚗 General Tune-Ups</li>
@@ -51,13 +56,24 @@
 
   <!-- Contact -->
   <section class="py-16 px-6 sm:px-12 md:px-32 bg-gradient-to-b from-purple-900 to-black">
-    <h3 class="text-2xl sm:text-3xl mb-4 text-green-400">Contact Us</h3>
+    <h3 class="text-2xl sm:text-3xl mb-6 text-green-400">Contact Us</h3>
+
+    <!-- Live Google Map -->
+    <div class="mb-6 w-full h-64 sm:h-80 md:h-96 rounded-xl overflow-hidden shadow-lg">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2883.2536370514717!2d-81.63702468450014!3d42.42519827920527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882ef6c8702d9d81%3A0x9a7c18d6203a3d9c!2s672%20Bloomfield%20Rd%2C%20Chatham-Kent%2C%20ON%20N7M%202J5!5e0!3m2!1sen!2sca!4v1693038721234!5m2!1sen!2sca"
+        width="100%"
+        height="100%"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
     <p class="text-lg mb-2">
       📍 Location:
-      <a 
-        href="https://www.google.com/maps/search/?api=1&query=672+Bloomfield+Rd,+Chatham,+Ontario" 
-        target="_blank" 
-        class="text-blue-400 hover:underline">
+      <a href="https://www.google.com/maps/search/?api=1&query=672+Bloomfield+Rd,+Chatham,+Ontario" target="_blank" class="text-blue-400 hover:underline">
         672 Bloomfield Rd, Chatham, ON
       </a>
     </p>
@@ -67,9 +83,7 @@
     </p>
     <p class="text-lg mb-6">
       📞 Phone: 
-      <a href="tel:+15193551324" class="text-blue-400 hover:underline">
-        (519) 355-1324
-      </a>
+      <a href="tel:+15193551324" class="text-blue-400 hover:underline">(519) 355-1324</a>
     </p>
     <a href="tel:+15193551324" class="inline-block bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-6 rounded-xl shadow-lg transition">
       Call to Book an Appointment
@@ -80,5 +94,6 @@
   <footer class="bg-black text-center py-6 text-gray-500">
     &copy; 2025 RPM Automotive. All rights reserved.
   </footer>
+
 </body>
 </html>
